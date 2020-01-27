@@ -14,4 +14,5 @@ class ProductPageLocators():
     NAMETOVARA2 = (By.CSS_SELECTOR, ".product_main h1 ")
     PRICE1 = (By.CSS_SELECTOR, ".alert-info strong")
     PRICE2 = (By.CSS_SELECTOR, ".product_main .price_color")
+    SUCCESS_MESSAGE =( By.CSS_SELECTOR, ".alertinner")
 
