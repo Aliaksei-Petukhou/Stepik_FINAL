@@ -4,7 +4,6 @@ from .locators import BasketPageLocators
 
 class BasketPage(BasePage): 
 
-
     def should_basket_empty(self):
         assert self.is_not_element_present(*BasketPageLocators.PRICEBASKET), "Basket is not empty , but should be"
         
