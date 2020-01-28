@@ -6,17 +6,11 @@ import time
 class LoginPage(BasePage):
 
     def register_new_user(self, email, password):
-        #email= input()
-        #password = input()
-        #email = str(time.time()) + "@fakemail.org"
         link_email = self.browser.find_element(*LoginPageLocators.REG_EMAIL)
         link_email.send_keys(email)
         link_password = self.browser.find_element(*LoginPageLocators.REG_PASS1)
-        #password = str(time.time())
-        #password.send_data('12345678')
         link_password.send_keys(password)
         password1 = self.browser.find_element(*LoginPageLocators.REG_PASS2)
-        #password1.send_keys(password)
         password1.send_keys(password)
         reg_button = self.browser.find_element(*LoginPageLocators.REG_BUTTON)
         reg_button.click()
@@ -30,7 +24,6 @@ class LoginPage(BasePage):
         self.should_be_register_form()
         
     def should_be_login_url(self):
-       # "login" in self.current_url
         assert  "login" in self.browser.current_url, "Login is absent in URL"
     
     def should_be_register_form(self):

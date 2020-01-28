@@ -1,5 +1,5 @@
 from selenium.common.exceptions import NoSuchElementException
-from selenium.common.exceptions import NoAlertPresentException # в начале файла
+from selenium.common.exceptions import NoAlertPresentException 
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -16,13 +16,10 @@ class BasePage():
     def go_to_basket_page(self):
         basket_link = self.browser.find_element(*BasePageLocators.BASKET_LINK)
         basket_link.click()
-        #return LoginPage(browser=self.browser, url=self.browser.current_url)
-  
+          
     def go_to_login_page(self):
         login_link = self.browser.find_element(*BasePageLocators.LOGIN_LINK)
-        login_link.click()
-        #return LoginPage(browser=self.browser, url=self.browser.current_url)         
-
+        login_link.click()      
 
     def is_disappeared(self, how, what, timeout=4):
         try:

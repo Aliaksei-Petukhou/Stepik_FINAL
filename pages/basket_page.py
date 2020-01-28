@@ -8,4 +8,4 @@ class BasketPage(BasePage):
         assert self.is_not_element_present(*BasketPageLocators.PRICEBASKET), "Basket is not empty , but should be"
         
     def should_be_text_about_empty(self):
-        assert self.is_element_present(*BasketPageLocators.BASKET_EMTY), "Basket is not empty, text about it is absent"# реализуйте проверку, что есть форма логина
+        assert self.is_element_present(*BasketPageLocators.BASKET_EMTY), "Basket is not empty, text about it is absent"

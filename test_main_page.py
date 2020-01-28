@@ -30,15 +30,3 @@ def test_guest_cant_see_product_in_basket_opened_from_main_page(browser):
     basket_page.should_basket_empty()
     basket_page.should_be_text_about_empty()
 
-  
-
-#   login_page = LoginPage(browser, browser.current_url)
- #   login_page.should_be_login_page()
-
-#def should_be_login_page(browser):
-#    link = "http://selenium1py.pythonanywhere.com/en-gb/accounts/login/"
-#    page = LoginPage(browser, link)
-#    page.open()
-#    page.should_be_login_form()
-#    page.should_be_register_form()
-#    page.should_be_login_url()

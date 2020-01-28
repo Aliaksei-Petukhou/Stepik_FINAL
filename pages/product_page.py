@@ -20,16 +20,3 @@ class ProductPage(BasePage):
     def should_success_message_dissappeared(self):
         assert self.is_disappeared(*ProductPageLocators.SUCCESS_MESSAGE), "Success Message is presented, but should be dissapered"
 
-
-    #def test_guest_cant_see_success_message_after_adding_product_to_basket(*ProductPageLocators.SUCCESS_MESSAGE):
-       # assert self.is_not_element_present(*ProductPageLocators.SUCCESS_MESSAGE), \
-        #        "Success message is presented, but should not be"
-            
-    #def test_guest_cant_see_success_message(*ProductPageLocators.SUCCESS_MESSAGE):
-        #assert self.is_not_element_present(*ProductPageLocators.SUCCESS_MESSAGE), \
-        #    "Success message is presented, but should not be"       
-            
-        
-    #def test_message_disappeared_after_adding_product_to_basket(*ProductPageLocators.SUCCESS_MESSAGE):
-        #assert self.is_disappeared(*ProductPageLocators.SUCCESS_MESSAGE), \
-        #    "Success Message is presented, but should be dissapered"
