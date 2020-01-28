@@ -5,14 +5,14 @@ import time
 
 class LoginPage(BasePage):
 
-    def register_new_user(self):
+    def register_new_user(self, email, password):
         #email= input()
         #password = input()
-        email = str(time.time()) + "@fakemail.org"
+        #email = str(time.time()) + "@fakemail.org"
         link_email = self.browser.find_element(*LoginPageLocators.REG_EMAIL)
         link_email.send_keys(email)
         link_password = self.browser.find_element(*LoginPageLocators.REG_PASS1)
-        password = str(time.time())
+        #password = str(time.time())
         #password.send_data('12345678')
         link_password.send_keys(password)
         password1 = self.browser.find_element(*LoginPageLocators.REG_PASS2)
